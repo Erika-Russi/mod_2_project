@@ -36,6 +36,11 @@ class Masseuse:
         mf = mf.rename(columns={0: "fetility"})
         self.dfs['mf'] = mf
         
+    def merge_hofstede_csv(self):
+        mf = self.dfs['mf']
+        df = self.build_df('hofstede_dimensions')
+        df = df.set_index('Country Code')
+        self.dfs['mf'] = mf.join(df, how='inner')        
         
     def merge_wb_csv_into_mf(self, name):
         mf = self.dfs['mf']
@@ -59,9 +64,12 @@ class Masseuse:
         file_names.remove('country')
         file_names.remove('fertility')
         file_names.remove('mf')
+        file_names.remove('hofstede_dimensions')
 
         for name in file_names:
             self.merge_wb_csv_into_mf(name)
+            
+        self.merge_hofstede_csv()
             
         self.write_mf_to_csv()
         return self.dfs['mf']
