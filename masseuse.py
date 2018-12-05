@@ -5,7 +5,8 @@ Created on Tue Dec  4 10:20:43 2018
 
 @author: griggles
 """
-import pandas as pd    
+import pandas as pd
+import os
 
 class Masseuse:
     def __init__(self, csv_dir='csv/'):
@@ -32,7 +33,7 @@ class Masseuse:
         mf.columns.name='Years'
         mf = mf.stack()
         mf = mf.to_frame()
-        mf = mf.rename(columns={0: "Fertility Rate"})
+        mf = mf.rename(columns={0: "fetility"})
         self.dfs['mf'] = mf
         
         
@@ -44,19 +45,31 @@ class Masseuse:
         df.columns.name='Years'
         df = df.stack()
         df = df.to_frame()
-        df = df.rename(columns={0: "Population Density"})
+        df = df.rename(columns={0: name})
         self.dfs['mf'] = mf.merge(df, how = 'inner', on = ['Country Code', 'Years'])
+        
+    def write_mf_to_csv(self):
+        self.dfs['mf'].to_csv(self.csv_dir + '/mf.csv')
         
     def build_data(self):
         self.filter_countries()
-        #self.merge_population_densities()
-        self.merge_wb_csv_into_mf('density')
+    
+        file_names = os.listdir(self.csv_dir)
+        file_names = [f[:-4] for f in file_names if f.endswith('.csv')]
+        file_names.remove('country')
+        file_names.remove('fertility')
+        file_names.remove('mf')
+
+        for name in file_names:
+            self.merge_wb_csv_into_mf(name)
+            
+        self.write_mf_to_csv()
         return self.dfs['mf']
 
 
 m = Masseuse()
 data = m.build_data()
-print(data)
+#print(data)
         
 
         
