@@ -43,9 +43,10 @@ class Masseuse:
         
     def merge_hofstede_csv(self):
         mf = self.dfs['mf']
-        df = self.build_df('hofstede_dimensions', self.extra_dir)
-        df = df.set_index('Country Code')
-        self.dfs['mf'] = mf.join(df, how='inner')
+        hofdf = self.build_df('hofstede_dimensions', self.extra_dir)
+        hofdf = hofdf.set_index('Country Code')
+        hofdf = hofdf[['long term orientation', 'indulgence vs restraint']]
+        self.dfs['mf'] = mf.join(hofdf, how='inner')
 
     def add_continents(self):
         mf = self.dfs['mf']
@@ -87,13 +88,17 @@ class Masseuse:
         self.write_mf_to_csv()
         
         self.dfs['mf'] = self.dfs['mf'].convert_objects(convert_numeric=True)
+        self.dfs['mf'] = self.dfs['mf'].dropna()
+        
+        #drop country name
+        #self.dfs['mf'] = self.dfs['mf'].drop()
         
         return self.dfs['mf']
 
 
-m = Masseuse()
-data = m.build_data()
-print(data)
+#m = Masseuse()
+#data = m.build_data()
+#print(data)
         
 
         
