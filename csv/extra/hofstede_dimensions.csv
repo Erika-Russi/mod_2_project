@@ -1,0 +1,102 @@
+country name,Country Code,power index,individualism,masculinity,uncertainty avoidance,long term orientation,indulgence vs restraint
+Albania,ALB,#NULL!,#NULL!,#NULL!,#NULL!,61,15
+Andorra,AND,#NULL!,#NULL!,#NULL!,#NULL!,#NULL!,65
+Argentina,ARG,49,46,56,86,20,62
+Armenia,ARM,#NULL!,#NULL!,#NULL!,#NULL!,61,#NULL!
+Australia,AUS,38,90,61,51,21,71
+Austria,AUT,11,55,79,70,60,63
+Azerbaijan,AZE,#NULL!,#NULL!,#NULL!,#NULL!,61,22
+Belgium,BEL,65,75,54,94,82,57
+Burkina Faso,BFA,#NULL!,#NULL!,#NULL!,#NULL!,27,18
+Bangladesh,BGD,80,20,55,60,47,20
+Bulgaria,BGR,70,30,40,85,69,16
+Bosnia and Herzegovina,BIH,#NULL!,#NULL!,#NULL!,#NULL!,70,44
+Belarus,BLR,#NULL!,#NULL!,#NULL!,#NULL!,81,15
+Brazil,BRA,69,38,49,76,44,59
+Canada,CAN,39,80,52,48,36,68
+Switzerland,CHE,34,68,70,58,74,66
+Chile,CHL,63,23,28,86,31,68
+China,CHN,80,20,66,30,87,24
+Colombia,COL,67,13,64,80,13,83
+Costa Rica,CRI,35,15,21,86,#NULL!,#NULL!
+Cyprus,CYP,#NULL!,#NULL!,#NULL!,#NULL!,#NULL!,70
+Czechia,CZE,57,58,57,74,70,29
+Germany,DEU,35,67,66,65,83,40
+Denmark,DNK,18,74,16,23,35,70
+Dominican Republic,DOM,#NULL!,#NULL!,#NULL!,#NULL!,13,54
+Algeria,DZA,#NULL!,#NULL!,#NULL!,#NULL!,26,32
+Ecuador,ECU,78,8,63,67,#NULL!,#NULL!
+Egypt,EGY,#NULL!,#NULL!,#NULL!,#NULL!,7,4
+Spain,ESP,57,51,42,86,48,44
+Estonia,EST,40,60,30,60,82,16
+Ethiopia,ETH,#NULL!,#NULL!,#NULL!,#NULL!,#NULL!,46
+Finland,FIN,33,63,26,59,38,57
+France,FRA,68,71,43,86,63,48
+United Kingdom of Great Britain and Northern Ireland,GBR,35,89,66,35,51,69
+Georgia,GEO,#NULL!,#NULL!,#NULL!,#NULL!,38,32
+Ghana,GHA,#NULL!,#NULL!,#NULL!,#NULL!,4,72
+Greece,GRC,60,35,57,112,45,50
+Guatemala,GTM,95,6,37,101,#NULL!,#NULL!
+Hong Kong,HKG,68,25,57,29,61,17
+Croatia,HRV,73,33,40,80,58,33
+Hungary,HUN,46,80,88,82,58,31
+Indonesia,IDN,78,14,46,48,62,38
+India,IND,77,48,56,40,51,26
+Ireland,IRL,28,70,68,35,24,65
+Iran (Islamic Republic of),IRN,58,41,43,59,14,40
+Iraq,IRQ,#NULL!,#NULL!,#NULL!,#NULL!,25,17
+Iceland,ISL,#NULL!,#NULL!,#NULL!,#NULL!,28,67
+Israel,ISR,13,54,47,81,38,#NULL!
+Italy,ITA,50,76,70,75,61,30
+Jamaica,JAM,45,39,68,13,#NULL!,#NULL!
+Jordan,JOR,#NULL!,#NULL!,#NULL!,#NULL!,16,43
+Japan,JPN,54,46,95,92,88,42
+Kyrgyzstan,KGZ,#NULL!,#NULL!,#NULL!,#NULL!,66,39
+Korea (Republic of),KOR,60,18,39,85,100,29
+Lithuania,LTU,42,60,19,65,82,16
+Luxembourg,LUX,40,60,50,70,64,56
+Latvia,LVA,44,70,9,63,69,13
+Morocco,MAR,70,46,53,68,14,25
+Moldova (Republic of),MDA,#NULL!,#NULL!,#NULL!,#NULL!,71,19
+Mexico,MEX,81,30,69,82,24,97
+Macedonia (the former Yugoslav Republic of),MKD,#NULL!,#NULL!,#NULL!,#NULL!,62,35
+Mali,MLI,#NULL!,#NULL!,#NULL!,#NULL!,20,43
+Malta,MLT,56,59,47,96,47,66
+Montenegro,MNE,#NULL!,#NULL!,#NULL!,#NULL!,75,20
+Malaysia,MYS,104,26,50,36,41,57
+Nigeria,NGA,#NULL!,#NULL!,#NULL!,#NULL!,13,84
+Netherlands,NLD,38,80,14,53,67,68
+Norway,NOR,31,69,8,50,35,55
+New Zealand,NZL,22,79,58,49,33,75
+Pakistan,PAK,55,14,50,70,50,0
+Panama,PAN,95,11,44,86,#NULL!,#NULL!
+Peru,PER,64,16,42,87,25,46
+Philippines,PHL,94,32,64,44,27,42
+Poland,POL,68,60,64,93,38,29
+Puerto Rico,PRI,#NULL!,#NULL!,#NULL!,#NULL!,0,90
+Portugal,PRT,63,27,31,104,28,33
+Romania,ROU,90,30,42,90,52,20
+Russian Federation,RUS,93,39,36,95,81,20
+Rwanda,RWA,#NULL!,#NULL!,#NULL!,#NULL!,18,37
+Saudi Arabia,SAU,#NULL!,#NULL!,#NULL!,#NULL!,36,52
+Singapore,SGP,74,20,48,8,72,46
+El Salvador,SLV,66,19,40,94,20,89
+Serbia,SRB,86,25,43,92,52,28
+Suriname,SUR,85,47,37,92,#NULL!,#NULL!
+Slovakia,SVK,104,52,110,51,77,28
+Slovenia,SVN,71,27,19,88,49,48
+Sweden,SWE,31,71,5,29,53,78
+Thailand,THA,64,20,34,64,32,45
+Trinidad and Tobago,TTO,47,16,58,55,13,80
+Turkey,TUR,66,37,45,85,46,49
+"Taiwan, Province of China",TWN,58,17,45,69,93,49
+"Tanzania, United Republic of",TZA,#NULL!,#NULL!,#NULL!,#NULL!,34,38
+Uganda,UGA,#NULL!,#NULL!,#NULL!,#NULL!,24,52
+Ukraine,UKR,#NULL!,#NULL!,#NULL!,#NULL!,86,14
+Uruguay,URY,61,36,38,100,26,53
+United States of America,USA,40,91,62,46,26,68
+Venezuela (Bolivarian Republic of),VEN,81,12,73,76,16,100
+Viet Nam,VNM,70,20,40,30,57,35
+South Africa,ZAF,#NULL!,#NULL!,#NULL!,#NULL!,34,63
+Zambia,ZMB,#NULL!,#NULL!,#NULL!,#NULL!,30,42
+Zimbabwe,ZWE,#NULL!,#NULL!,#NULL!,#NULL!,15,28
