@@ -45,7 +45,18 @@ class Masseuse:
         mf = self.dfs['mf']
         df = self.build_df('hofstede_dimensions', self.extra_dir)
         df = df.set_index('Country Code')
-        self.dfs['mf'] = mf.join(df, how='inner')        
+        self.dfs['mf'] = mf.join(df, how='inner')
+
+    def add_continents(self):
+        mf = self.dfs['mf']
+        country = self.dfs['country']
+        country = country.rename(columns={'alpha-3': 'Country Code'})
+        continent = country.set_index('Country Code')
+        continent = continent['region']
+        continent = continent.to_frame()
+        continent = continent.rename(columns={'region': 'continent'})
+        self.dfs['mf'] = mf.join(continent, how='inner')
+       # print(continent)
         
     def merge_wb_csv_into_mf(self, name):
         mf = self.dfs['mf']
@@ -71,6 +82,7 @@ class Masseuse:
             self.merge_wb_csv_into_mf(name)
             
         self.merge_hofstede_csv()
+        self.add_continents()
             
         self.write_mf_to_csv()
         
@@ -79,9 +91,9 @@ class Masseuse:
         return self.dfs['mf']
 
 
-#m = Masseuse()
-#data = m.build_data()
-#print(data)
+m = Masseuse()
+data = m.build_data()
+print(data)
         
 
         
