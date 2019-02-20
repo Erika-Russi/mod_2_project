@@ -1,10 +1,3 @@
-
-
-```python
-import warnings
-warnings.filterwarnings('ignore')
-```
-
 # Fertility Rate Prediction Model 
 
 >By Tom Grigg and Erika Russi (DS-10.22.2018)
@@ -557,29 +550,3 @@ print(est4.summary())
     [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
     [2] The condition number is large, 1.55e+07. This might indicate that there are
     strong multicollinearity or other numerical problems.
-
-
-
-```python
-import plotly.plotly as py
-import plotly.graph_objs as go
-
-plot = [go.Bar(
-            x=est4.params.index,
-            y=est4.params.values
-    )]
-
-py.iplot(plot)
-```
-
-
-
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~tmgrgg/26.embed" height="525px" width="100%"></iframe>
-
-
-
-
-```python
-
-```
