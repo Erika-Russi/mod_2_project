@@ -1,10 +1,3 @@
-
-
-```python
-import warnings
-warnings.filterwarnings('ignore')
-```
-
 # Fertility Rate Prediction Model 
 
 >By Tom Grigg and Erika Russi (DS-10.22.2018)
